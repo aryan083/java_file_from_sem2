@@ -1,0 +1,265 @@
+import java.util.*;
+//all methods are final 
+class Vehicle{
+// This class Has the all of the manufacturing Processes as methods.
+ 
+    public final void Raw_Process(){
+        System.out.print("Row Process:- This part of manufracting is to crate a base model to work upon." );
+        System.out.println("");
+    }
+
+    public final void Body_Constuction(){
+     System.out.println("Body Constuction :- This is the part of manufracturing process that craates inner body for Vechicle. ");
+     System.out.println("");   
+    }
+
+    public final void Part_Placing(){
+        System.out.println("Part Placing :- This part of manufracturing process is the part where the Working parts such as engine and carborator are assambled in body ");
+        System.out.println("");
+    }
+
+    public final void Finshing_Work(){
+        System.out.println("Finshing Work:- This the part where everything comes togather and final model is creted. ");
+        System.out.println("");
+    }
+    public final void paint_job(){
+        System.out.println("Paint Job :- Over here paint job on vehicle is done.");
+    System.out.println("");
+    }
+
+}
+
+class Two_Wheeler extends Vehicle{
+    //this is the class for two Wheeler type which is extends Vehicle class 
+    //1 method is there wihch is to Take Input of the chocie for Model of this class 
+    public final void Choice_Of_Model(int str){
+        if(str==1){
+            T_W_Premium TwP1= new T_W_Premium();
+            TwP1.PremiumDetails();
+        }
+        else if (str==0){
+            T_W_Basic twB1= new T_W_Basic();
+            twB1.BasicDetails(); 
+        }
+        }
+}
+
+class T_W_Basic extends Two_Wheeler{
+    //basic class for TWO Wheeler Class Which extends the Two Wheeler Class
+    // 1 method is there to Show the details of basic model
+    public final void BasicDetails()
+{
+    System.out.println("This model is the basic Model for A Two Wheeler.");
+    System.out.println("");
+    System.out.println("This model comes with 10L Fuel tank and gives milage of 45");
+    System.out.println("");
+    System.out.println("It comes with basic Body desgin and 5 yers of Warrenty");
+    System.out.println("");
+    System.out.println("Comes With Colours of White Or Black");
+    System.out.println("");
+    System.out.println("Pricing Starts at :- 45,000");
+    System.out.println("");
+}
+
+}
+class T_W_Premium extends Two_Wheeler{
+
+    //this is Two Wheeler Premium Class Which extends the Two wheeler Class 
+    // 1 Method is there to print the Detail of this model
+public final void PremiumDetails(){
+
+System.out.println("This model is the Premium Model Of The Two-Wheeler type");
+System.out.println("");
+System.out.println("This model comes with 18L Fuel tank and gives milage of 95");
+System.out.println("");
+System.out.println("It has a strong Body desgin and comes with 15 Years of Warrenty and insurance");
+System.out.println("");
+System.out.println("Comes with colour Choice of Either BlacK,White,Red,Ocean-Blue,Emrald-Green");
+System.out.println("");
+System.out.println("Comes With option to Modify");
+System.out.println("");
+System.out.println("Pricing Starts at :- 90,000");
+System.out.println("");
+    }
+}
+
+class Three_Wheeler extends Vehicle{
+ 
+    //this is the class for three Wheeler type which is extends Vehicle class 
+    //1 method is there wihch is to Take Input of the chocie for Model of this class
+    public final void Choice_Of_Model(int str){
+    if(str==1){
+        Three_Wheeler_Premium ThP1= new Three_Wheeler_Premium();
+        ThP1.PremiumDetails();
+    }
+    else if (str==0){
+        Three_Wheeler_Basic thB1= new Three_Wheeler_Basic();
+        thB1.BasicDetails(); 
+    }
+    }
+}
+
+class Three_Wheeler_Basic extends Three_Wheeler{
+    //basic class for THree Wheeler class which extends Three Wheeler class
+    // 1 method is there to Show the details of basic model
+    
+    public final void BasicDetails()
+    {
+        System.out.println("This model is the basic Model for A Three Wheeler.");
+        System.out.println("");
+        System.out.println("This model comes with 20L Fuel tank and gives milage of 65");  
+        System.out.println("");
+        System.out.println("It comes with basic Body desgin and 5 yers of Warrenty");
+        System.out.println("");
+        System.out.println("sitting Capacity :- 2");
+        System.out.println("");
+        System.out.println("Comes With Colours of White Or Black");
+        System.out.println("");
+        System.out.println("Pricing Starts at :- 11,00,000");
+        System.out.println("");
+    }
+
+}
+
+class Three_Wheeler_Premium extends Three_Wheeler {
+    
+    //this is Three Wheeler Premium Class Which extends the hree wheeler  Class 
+    // 1 Method is there to print the Detail of this model
+    public final void PremiumDetails(){
+
+        System.out.println("This model is the Premium Model Of The Three-Wheeler type");
+        System.out.println("");
+        System.out.println("This model comes with 25L Fuel tank and gives milage of 105");
+        System.out.println("");
+        System.out.println("It has a strong Body desgin and comes with 15 Years of Warrenty and insurance");
+        System.out.println("");
+        System.out.println("sitting Capacity :- 2");    
+        System.out.println("");
+        System.out.println("Comes with colour Choice of Either BlacK,White,Red,Ocean-Blue,Emrald-Green");
+        System.out.println("");
+        System.out.println("Comes With option to Modify");
+        System.out.println("");
+        System.out.println("Pricing Starts at :- 1,40,000");
+        System.out.println("");
+    }
+}
+class Four_Wheeler extends Vehicle{
+
+    //this is the class for Four Wheeler type which is extends Vehicle class 
+    //1 method is there wihch is to Take Input of the chocie for Model of this class
+    public final void Choice_Of_Model(int str){
+        if(str==1){
+            F_W_Premium FWP1= new F_W_Premium();
+            FWP1.PremiumDetails();
+            
+        }
+        else if (str==1){
+            F_W_Basic FWB1= new F_W_Basic();
+            FWB1.BasicDetails(); 
+        }
+        }
+}
+
+class F_W_Basic extends Four_Wheeler{
+    //basic class for Four Wheeler class which extends Four wheeler Class 
+    // 1 method is there to Show the details of basic model
+    
+    public final void BasicDetails()
+    {
+        System.out.println("This model is the basic Model for A Four Wheeler.");
+        System.out.println("");
+        System.out.println("This model comes with 10L Fuel tank and gives milage of 135"); 
+        System.out.println(""); 
+        System.out.println("It comes with basic Body desgin and 5 yers of Warrenty");
+        System.out.println("");
+        System.out.println("Sitting Capacity : - 4");
+        System.out.println("");
+        System.out.println("Comes With Colours of White Or Black");
+        System.out.println("");
+        System.out.println("Pricing Starts at :- 1,60,000");
+        System.out.println("");
+
+    }
+}
+class F_W_Premium extends Four_Wheeler{
+    
+    //this is Four Wheeler Premium Class Which extends the Four Wheeler Class 
+    // 1 Method is there to print the Detail of this model
+    public  final void PremiumDetails(){
+
+        System.out.println("This model is the Premium Model Of The Four-Wheeler type");
+        System.out.println("");
+        System.out.println("This model comes with 18L Fuel tank and gives milage of 175");
+        System.out.println("");
+        System.out.println("It has a strong Body desgin and comes with 15 Years of Warrenty and insurance");
+        System.out.println("");
+        System.out.println("It Comes with Sitting Capacity of 7 People.");
+        System.out.println("");
+        System.out.println("Comes with colour Choice of Either BlacK,White,Red,Ocean-Blue,Emrald-Green");
+        System.out.println("");
+        System.out.println("Comes With option to Modify");    
+        System.out.println("");
+        System.out.println("Pricing Starts at :- 2,20,000");
+        System.out.println("");
+    }
+    }    
+public class LongHourCoding {
+//main method Class 
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("Enter the Choice (1 for yes or 0 for No ) Weather You want to Know the basic plan to make a Vechile:- ");
+    int Choice=sc.nextInt();
+    int Choice_to_Go_Futher;
+    int Choice_Of_Vehicle_type;
+    int Model_Choice;
+    if(Choice ==1){
+        Vehicle V1= new Vehicle();
+        V1.Raw_Process();
+        V1.Body_Constuction();
+        V1.Part_Placing();
+        V1.Finshing_Work();
+        V1.paint_job();
+        System.out.println("Wound Like to Know more about this 1 for Yes 0 for No ???");
+        Choice_to_Go_Futher=sc.nextInt();
+        if(Choice_to_Go_Futher==1){
+        System.out.println("Enter the Which Type of Vehicle you Want to Know About. Enter 2 for Two-Wheeler,3 for 3-wheeler,4 for 4-Wheelr  ");  
+        Choice_Of_Vehicle_type=sc.nextInt();
+        if(Choice_Of_Vehicle_type==2)
+        {
+            Two_Wheeler T21= new Two_Wheeler();
+            System.out.println("Enter the Choice 1 for Premium and 0 for Basic ");
+            Model_Choice=sc.nextInt();
+            T21.Choice_Of_Model(Model_Choice);
+        
+        
+        }
+        else if(Choice_Of_Vehicle_type==3)
+        {
+            Three_Wheeler TH1= new Three_Wheeler();
+            System.out.println("Enter the Choice 1 for Premium and 0 for Basic ");
+            Model_Choice=sc.nextInt();
+            TH1.Choice_Of_Model(Model_Choice);
+        }
+        else if(Choice_Of_Vehicle_type==4)
+        {
+            Four_Wheeler FW1= new Four_Wheeler();
+            System.out.println("Enter the Choice 1 for Premium and 0 for Basic ");
+            Model_Choice=sc.nextInt();
+            FW1.Choice_Of_Model(Model_Choice);
+
+        }
+        else {
+            System.out.println("Enter a Value for Valid Vehicle Type !!!");
+        }
+        }
+
+        
+    }else if(Choice ==0){
+        System.out.println("Thank you for Giving us Your Time");
+    }else {
+        System.out.println("Enter a valid Response");
+    }
+    System.out.println("Thank You for Visitng.");
+     sc.close();
+}    
+}
